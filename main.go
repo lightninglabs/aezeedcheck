@@ -28,7 +28,6 @@ var (
 		"encrypt the aezeed pass phrase")
 )
 
-// deriveFirstKey...
 func deriveFirstKey(rootKey *hdkeychain.ExtendedKey, purpose uint32,
 	keyFamily keychain.KeyFamily) (*btcec.PublicKey, error) {
 
@@ -50,7 +49,6 @@ func deriveFirstKey(rootKey *hdkeychain.ExtendedKey, purpose uint32,
 	return firstChild.ECPubKey()
 }
 
-// deriveAccountKey...
 func deriveAccountKey(rootKey *hdkeychain.ExtendedKey,
 	purpose uint32,
 	keyFamily keychain.KeyFamily) (*hdkeychain.ExtendedKey, error) {
